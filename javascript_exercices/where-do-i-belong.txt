@@ -1,0 +1,22 @@
+function getIndexToIns(arr, num) 
+{
+  arr.sort((a,b)=>a-b);
+  let i=0;
+  for( i=0;i<arr.length;i++)
+  {
+    if(num===arr[i])
+    {
+      return i;
+    }
+
+  if(arr[i]>num)
+  {
+    return i;
+  }
+    
+  }
+  return i;
+}
+
+getIndexToIns([1,2,3,4], 3.5);
+console.log(getIndexToIns([2, 5, 10], 15));

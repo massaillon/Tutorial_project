@@ -1,0 +1,9 @@
+function findElement(arr, func) {
+ 
+  return arr.find(func);
+}
+  let num = 0;
+ 
+
+
+console.log(findElement([2, 5, 3, 7], num => num % 2 === 0));

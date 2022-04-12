@@ -1,0 +1,25 @@
+function confirmEnding(str, target) 
+{  
+  let lastLetter 
+  console.log(target)
+ for(let i=0;i<str.length;i++){
+ lastLetter = str.substring(str.length-target.length)
+     if(lastLetter === target){
+   return true
+ }
+ return false;
+   }
+ 
+ 
+ console.log(target.length)
+//theFourLast = str.substring(str.length-4)
+ 
+ /*else if(theFourLast === target){
+   console.log(theFourLast)
+return true
+ }*/
+//}
+  return false
+  //}
+}
+console.log(confirmEnding("Bastian", "ian"));

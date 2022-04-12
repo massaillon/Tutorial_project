@@ -1,0 +1,36 @@
+function largestOfFour(arr) {
+	
+let largest=[]
+	let largestNumb;
+	
+	for(let i=0;i<arr.length;i++ ){
+		largestNumb=arr[i][0]
+		for(let j=1;j<arr[i].length;j++){
+		
+		if(arr[i][j]>largestNumb){
+			largestNumb=arr[i][j]
+		}
+		largest[i]=largestNumb
+		//console.log(largestNumb)
+		}
+	}
+	return largest;
+	}
+
+
+
+	/*function findLargest(arr){
+	let max = 0
+	
+	let largest = 0
+	for(let k=0;k<arr.length;k++){
+		if(arr[k]>max){
+			max=arr[k];
+			largest = max 
+		}
+	}
+  return largest ;
+}
+//console.log(findLargest([4, 5, 1, 3]));*/
+
+console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));

@@ -1,0 +1,17 @@
+function largestOfFour(arr) {
+	let largest=Math.max(...arr);
+	let maxNumb=[]
+//const	maxNumb=Math.max(...arr)
+	arr.sort()
+	//console.log(arr)
+	for(let i=0;i<arr.length;i++){
+		if(arr[i]>largest){
+			maxNumb.push(arr[i]);
+			//console.log(largest)
+		}
+	}
+	
+  return largest;
+}
+
+console.log(largestOfFour([ -1000, -1001, -857, 1, 13, 27, 18, 26, 32, 35, 37, 39, 4, 5, 1, 3 ]));
